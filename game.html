@@ -1,0 +1,55 @@
+<html>
+	<head>
+	<title>game</title>
+	<script>
+		alert("You wake up in an unfamiliar room");
+		var choice1 = prompt("-leave room- or -look around-");
+		if (choice1 == "leave room") {
+		alert("you enter a second room with a only a light switch")
+		var secondroom = prompt("do you flip the switch?-yes- or -no-")
+		} else if(choice1 == "look around") {
+		alert("you look around and find a red button on the wall. do you push the button?");
+		var redbutton = prompt("-yes- or -no-");
+		}
+		
+		
+		
+		
+		if (secondroom == "yes") {
+		alert("you flip the switch");
+		alert("you wake up in your bed at home. must have been a weird dream.(ending)");
+		
+		} else if (secondroom == "no") {
+		alert("the lights turn off anyway. you died(ending)");
+		}
+		
+		
+		if (redbutton == "yes") {
+		alert("you push the button and nothing happens.");
+		var again = prompt("push it again? -yes- or -no-");
+		if (again == "yes") {
+		alert("you find yourself at home in your bed. (ending)");
+		
+		}else if (again == "no"){
+		alert("the button flashes. you disappear from the face of earth");
+		}
+		
+		
+		}
+		
+		if (redbutton == "no") {
+		alert("you dont push the button. the angel of death appears. (ending)");
+		}
+		
+		
+	
+	
+	
+	</script>
+	</head>
+	<body>
+	
+	
+	</body>
+
+</html>
