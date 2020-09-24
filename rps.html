@@ -1,0 +1,117 @@
+<html>
+	<head>
+	<title>
+	rps
+	</title>
+	<style>
+	img {
+	height:300px;
+	width:300px;
+	}
+	
+	</style>
+	
+	
+	
+	
+	</head>
+	
+	
+	
+	
+	<body>
+	<p id = "winner">
+	
+	
+	</p>
+	<button><img id = "one" src = "http://atlas-content-cdn.pixelsquid.com/stock-images/rock-stone-donYdx7-600.jpg"></button>
+	
+	<button><img id = "two" src = "https://images.freecreatives.com/wp-content/uploads/2016/02/Note-Lined-Paper-Background-For-Free.jpg"></button>
+	
+	<button><img id = "three" src = "https://th.bing.com/th/id/OIP.FXRFaT5-QuqVI13eEk1QLwD6D6?pid=Api&rs=1"></button>
+	
+	<h1>THE COMPUTER WILL CHOOSE AND DISPLAY: rock = 0, paper = 1, scissors = 2	</h1>
+	
+	
+	
+	<script>
+		
+		var img1 = document.getElementById("one");
+		var img2 = document.getElementById("two");
+		var img3 = document.getElementById("three");
+		var winner = document.getElementById("winner");
+		var thewinner;
+		var choices = ["rock", "paper", "scissors"];
+		var button1 = document.getElementsByTagName("button")[0];
+		var button2 = document.getElementsByTagName("button")[1];
+		var button3 = document.getElementsByTagName("button")[2];
+		
+		var buttona = function(){
+		var random_number = Math.floor(Math.random() * 3);
+		alert("the computer chose " + random_number);
+		console.error("Button was clicked!");
+		if (random_number == 0) {
+		winner.innerText = "draw";
+		alert("-rock- draw")
+		} else if (random_number == 1) {
+		alert("-paper- you lost");
+		winner.innerText = "you lost...";
+		} else if (random_number == 2) {
+		winner.innerText = "you won!!!";
+		alert("-scissors- you won");
+		}
+		
+		
+		}
+		
+		var buttonb = function(){
+		var random_number = Math.floor(Math.random() * 3);
+		alert("the computer chose " + random_number);
+		console.error("Button was clicked!");
+		if (random_number == 0) {
+		alert("-rock- you won")
+		winner.innerText = "you won!!!";
+		} else if (random_number == 1) {
+		alert("-paper- draw");
+		winner.innerText = "draw";
+		} else if (random_number == 2) {
+		winner.innerText = "you lost...";
+		alert("-scissors- you lost");
+		}
+		
+		
+		}
+		
+		
+		var buttonc = function(){
+		var random_number = Math.floor(Math.random() * 3);
+		alert("the computer chose " + random_number);
+		console.error("Button was clicked!");
+		if (random_number == 0) {
+		alert("-rock- you lost")
+		winner.innerText = "you lost...";
+		} else if (random_number == 1) {
+		alert("-paper- you won");
+		winner.innerText = "you won!!!";
+		} else if (random_number == 2) {
+		winner.innerText = "draw";
+		alert("-scissors- draw");
+		}
+		
+		
+		}
+		
+		
+		button1.addEventListener("click",buttona);
+		button2.addEventListener("click",buttonb);
+		button3.addEventListener("click",buttonc);
+		
+	</script>
+	</body>
+
+
+
+
+
+
+</html>
